@@ -101,7 +101,7 @@
 
         /* ─── Currently Building ─── */
         .currently-building { padding: 140px 0; background: rgba(8,8,8,0.25); backdrop-filter: blur(24px) saturate(1.2); -webkit-backdrop-filter: blur(24px) saturate(1.2); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
-        .build-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px; }
+        .build-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 28px; }
         .build-card { background: rgba(255,255,255,0.04); backdrop-filter: blur(16px) saturate(1.1); -webkit-backdrop-filter: blur(16px) saturate(1.1); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 44px; transition: transform 0.5s cubic-bezier(0.25,1,0.5,1), border-color 0.5s, background 0.5s, box-shadow 0.5s; position: relative; overflow: hidden; }
         .build-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,169,110,0.3), transparent); opacity: 0; transition: opacity 0.5s; }
         .build-card:hover { transform: translateY(-8px); border-color: rgba(201,169,110,0.3); background: rgba(255,255,255,0.07); box-shadow: 0 24px 64px rgba(0,0,0,0.3), 0 0 80px rgba(201,169,110,0.04); }
@@ -131,7 +131,7 @@
         .filter-tab { padding: 10px 22px; border-radius: 28px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.04); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: rgba(232,230,227,0.45); font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 500; cursor: none; transition: all 0.4s cubic-bezier(0.25,1,0.5,1); font-family: 'Outfit', sans-serif; }
         .filter-tab:hover { background: rgba(201,169,110,0.12); border-color: rgba(201,169,110,0.3); color: #c9a96e; }
         .filter-tab.active { background: rgba(201,169,110,0.15); border-color: rgba(201,169,110,0.4); color: #c9a96e; box-shadow: 0 0 20px rgba(201,169,110,0.1); }
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 24px; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr)); gap: 24px; }
         .project-card { background: rgba(255,255,255,0.04); backdrop-filter: blur(16px) saturate(1.1); -webkit-backdrop-filter: blur(16px) saturate(1.1); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 40px; transition: transform 0.5s cubic-bezier(0.25,1,0.5,1), border-color 0.5s, background 0.5s, box-shadow 0.5s; position: relative; overflow: hidden; }
         .project-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, #c9a96e, transparent); opacity: 0; transition: opacity 0.5s; }
         .project-card.hidden { display: none; }
@@ -148,7 +148,7 @@
 
         /* ─── Skills ─── */
         .skills { padding: 160px 0; background: rgba(8,8,8,0.2); backdrop-filter: blur(20px) saturate(1.1); -webkit-backdrop-filter: blur(20px) saturate(1.1); border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); gap: 28px; }
         .skill-group { padding: 36px; background: rgba(255,255,255,0.04); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; transition: transform 0.5s cubic-bezier(0.25,1,0.5,1), border-color 0.5s, box-shadow 0.5s; position: relative; overflow: hidden; }
         .skill-group::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,169,110,0.2), transparent); opacity: 0; transition: opacity 0.5s; }
         .skill-group:hover { transform: translateY(-4px); border-color: rgba(201,169,110,0.2); background: rgba(255,255,255,0.07); box-shadow: 0 16px 48px rgba(0,0,0,0.2); }
@@ -161,7 +161,7 @@
 
         /* ─── Services ─── */
         .services { padding: 160px 0; background: rgba(8,8,8,0.2); backdrop-filter: blur(20px) saturate(1.1); -webkit-backdrop-filter: blur(20px) saturate(1.1); border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 24px; }
         .service-card { padding: 40px; background: rgba(255,255,255,0.04); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; transition: transform 0.5s cubic-bezier(0.25,1,0.5,1), border-color 0.5s, box-shadow 0.5s; position: relative; overflow: hidden; }
         .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,169,110,0.25), transparent); opacity: 0; transition: opacity 0.5s; }
         .service-card:hover { transform: translateY(-6px); border-color: rgba(201,169,110,0.25); background: rgba(255,255,255,0.07); box-shadow: 0 20px 56px rgba(0,0,0,0.25); }
@@ -297,31 +297,123 @@
         /* ─── Scroll-linked Card Parallax (applied via JS transform) ─── */
 
         /* ─── Responsive ─── */
+
+        /* ── Mobile hamburger ── */
+        .hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:none;padding:0;pointer-events:auto;z-index:110}
+        .hamburger span{display:block;width:100%;height:1.5px;background:#e8e6e3;transition:transform .35s cubic-bezier(.25,1,.5,1),opacity .3s;border-radius:2px}
+        .hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+        .hamburger.open span:nth-child(2){opacity:0}
+        .hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+        .mobile-nav{position:fixed;inset:0;z-index:99;background:rgba(8,8,8,.96);backdrop-filter:blur(24px) saturate(1.4);-webkit-backdrop-filter:blur(24px) saturate(1.4);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;visibility:hidden;transition:opacity .4s cubic-bezier(.25,1,.5,1),visibility .4s}
+        .mobile-nav.open{opacity:1;visibility:visible}
+        .mobile-nav a{font-family:'Italiana',serif;font-size:28px;color:rgba(232,230,227,.6);text-decoration:none;letter-spacing:3px;transition:color .3s,transform .3s}
+        .mobile-nav a:hover,.mobile-nav a:active{color:#c9a96e;transform:translateX(6px)}
+        .mobile-nav .mobile-cta{font-family:'Outfit',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:2px;padding:14px 36px;background:linear-gradient(135deg,#c9a96e,#b8944f);color:#0a0a0a;border-radius:32px;font-weight:600;margin-top:12px}
+
         @media (max-width: 900px) {
-            .main-header { padding: 20px 24px; }
-            .main-header.scrolled { padding: 14px 24px; }
+            .main-header { padding: 16px 20px; }
+            .main-header.scrolled { padding: 12px 20px; }
             .header-nav { display: none; }
-            .container { padding: 0 24px; }
-            .about-grid { grid-template-columns: 1fr; gap: 48px; }
-            .contact-grid { grid-template-columns: 1fr; gap: 56px; }
+            .hamburger { display: flex; }
+            .container { padding: 0 20px; }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .contact-grid { grid-template-columns: 1fr; gap: 48px; }
             .projects-grid { grid-template-columns: 1fr; }
             .build-cards { grid-template-columns: 1fr; }
             .services-grid { grid-template-columns: 1fr; }
             .skills-grid { grid-template-columns: 1fr 1fr; }
-            .footer { padding: 28px 24px; flex-direction: column; gap: 16px; text-align: center; }
+            .footer { padding: 28px 20px; flex-direction: column; gap: 16px; text-align: center; }
             .footer-links { justify-content: center; }
-            .hero { padding: 140px 0 80px; }
+            .hero { padding: 120px 0 60px; min-height: auto; }
             .hero-actions { flex-direction: column; gap: 12px; }
             .hero-actions a { text-align: center; justify-content: center; }
-            .edu-card { flex-direction: column; }
+            .edu-card { flex-direction: column; padding: 28px 24px; }
             #depth-canvas { display: none; }
             .skill-universe { height: 400px; }
+            .hero-stats { gap: 24px; flex-wrap: wrap; }
+            section { padding-left: 0; padding-right: 0; }
+            .currently-building, .about, .projects, .skills, .services, .education, .contact { padding: 80px 0; }
+            .contact { padding-bottom: 60px; }
+            .filter-tabs { gap: 6px; }
+            .filter-tab { padding: 8px 16px; font-size: 10px; }
         }
+
         @media (max-width: 600px) {
             .skills-grid { grid-template-columns: 1fr; }
-            .projects-grid { grid-template-columns: 1fr; }
-            .hero-meta { flex-wrap: wrap; gap: 12px; }
-            .skill-universe { height: 350px; }
+            .hero-meta { flex-wrap: wrap; gap: 10px; font-size: 10px; letter-spacing: 1.5px; }
+            .hero-meta .dot { display: none; }
+            .hero-meta span { white-space: nowrap; }
+            .skill-universe { height: 320px; }
+            .hero-label { font-size: 10px; letter-spacing: 3px; gap: 10px; }
+            .hero-label::before { width: 24px; }
+            .hero-tagline { font-size: 14px; line-height: 1.7; max-width: 100%; }
+            .hero-title { font-size: 15px; }
+            .contact-info h3 { font-size: 28px; }
+            .contact-link { padding: 14px 16px; font-size: 13px; }
+            .contact-link .icon { width: 36px; height: 36px; }
+            .project-card { padding: 24px; }
+            .project-card h3 { font-size: 22px; }
+            .build-card { padding: 28px; }
+            .build-card h3 { font-size: 24px; }
+            .section-title { margin-bottom: 36px; }
+            .about-text { font-size: 15px; }
+            .edu-card { gap: 20px; }
+            .edu-card h3 { font-size: 18px; }
+            .hero-stats { gap: 20px; }
+            .stat-number { font-size: 28px; }
+            .stat-label { font-size: 9px; letter-spacing: 1.5px; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-name { font-size: clamp(36px, 10vw, 60px); }
+            .section-title { font-size: clamp(30px, 7vw, 44px); }
+            .currently-building, .about, .projects, .skills, .services, .education, .contact { padding: 60px 0; }
+            .hero { padding: 100px 0 48px; }
+            .availability { font-size: 11px; margin-bottom: 16px; }
+            .hero-actions { margin-top: 32px; }
+            .btn-primary, .btn-secondary { padding: 13px 28px; font-size: 11px; }
+            .hero-stats { gap: 16px; }
+            .stat-number { font-size: 24px; }
+            .filter-tabs { gap: 4px; }
+            .filter-tab { padding: 7px 12px; font-size: 9px; letter-spacing: 1px; }
+            .skill-group { padding: 24px; }
+            .skill-group h4 { font-size: 10px; letter-spacing: 2px; margin-bottom: 14px; }
+            .skill-group li { font-size: 13px; padding: 8px 0; }
+            .service-card { padding: 28px; }
+            .service-card h3 { font-size: 17px; }
+            .service-card .service-icon { width: 44px; height: 44px; }
+            .contact-info h3 { font-size: 24px; }
+            .highlight-item { padding: 20px 22px; }
+            .highlight-item p { font-size: 13px; }
+            .footer { padding: 24px 20px; }
+            .footer-brand { font-size: 14px; letter-spacing: 2px; }
+            .footer-copy { font-size: 10px; }
+            .mobile-nav a { font-size: 22px; }
+        }
+
+        @media (max-width: 360px) {
+            .hero-name { font-size: 32px; }
+            .section-title { font-size: 28px; }
+            .hero-label { font-size: 9px; letter-spacing: 2px; }
+            .hero-title { font-size: 13px; }
+            .hero-tagline { font-size: 13px; }
+            .project-card { padding: 20px; }
+            .project-card h3 { font-size: 19px; }
+            .project-card p { font-size: 13px; }
+            .build-card { padding: 22px; }
+            .build-card p { font-size: 13px; }
+            .hero-meta span { font-size: 9px; }
+            .stat-number { font-size: 22px; }
+            .stat-label { font-size: 8px; }
+        }
+
+        /* ── Disable custom cursor + parallax JS on touch ── */
+        @media (hover: none) and (pointer: coarse) {
+            *, *::before, *::after { cursor: auto !important; }
+            body { cursor: auto; }
+            .cursor-inner, .cursor-outer { display: none !important; }
+            .cursor-trail { display: none !important; }
+            .film-grain { display: none !important; }
         }
     </style>
 </head>
@@ -351,7 +443,17 @@
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
         <a href="#contact" class="contact-btn">Let's Talk</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
     </header>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="mobile-cta">Let's Talk</a>
+    </div>
 
     <section class="hero" id="hero">
         <div class="container">
@@ -714,6 +816,7 @@
         import * as THREE from 'three';
 
         const canvas = document.querySelector('#webgl');
+        const isMobile = window.matchMedia('(max-width: 768px)').matches || ('ontouchstart' in window && window.innerWidth < 1024);
         let scene, camera, renderer;
         const clock = new THREE.Clock();
         let cursorX = window.innerWidth / 2, cursorY = window.innerHeight / 2;
@@ -722,7 +825,12 @@
         let mouseX = 0, mouseY = 0;
         const sizes = { width: window.innerWidth, height: window.innerHeight };
 
-        scene = new THREE.Scene();
+        if (isMobile) {
+            canvas.style.display = 'none';
+            document.body.classList.add('no-webgl');
+        }
+
+        if (!isMobile) {
         scene.background = new THREE.Color('#080808');
         camera = new THREE.PerspectiveCamera(50, sizes.width / sizes.height, 0.1, 100);
         camera.position.set(0, 0, 5);
@@ -840,6 +948,7 @@
             particles.geometry.attributes.position.needsUpdate = true;
             renderer.render(scene, camera);
         }
+        } // end !isMobile
 
         // Text scramble decode effect
         const scrambleChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*!?<>';
@@ -930,19 +1039,37 @@
             else { header.classList.remove('scrolled'); }
         });
 
+        // Mobile hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileNav.classList.toggle('open');
+            document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+        });
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                mobileNav.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
+
         // Photo parallax — pans down through the portrait photo as you scroll
         // so the full picture is visible by the time you reach the page end.
-        const bgImg = document.querySelector('.page-bg img');
-        let bgTicking = false;
-        function updateBgParallax() {
-            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = maxScroll > 0 ? Math.min(window.scrollY / maxScroll, 1) : 0;
-            if (bgImg) { bgImg.style.objectPosition = `50% ${progress * 100}%`; }
-            bgTicking = false;
+        if (!isMobile) {
+            const bgImg = document.querySelector('.page-bg img');
+            let bgTicking = false;
+            function updateBgParallax() {
+                const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = maxScroll > 0 ? Math.min(window.scrollY / maxScroll, 1) : 0;
+                if (bgImg) { bgImg.style.objectPosition = `50% ${progress * 100}%`; }
+                bgTicking = false;
+            }
+            window.addEventListener('scroll', () => {
+                if (!bgTicking) { bgTicking = true; requestAnimationFrame(updateBgParallax); }
+            }, { passive: true });
         }
-        window.addEventListener('scroll', () => {
-            if (!bgTicking) { bgTicking = true; requestAnimationFrame(updateBgParallax); }
-        }, { passive: true });
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -954,29 +1081,33 @@
         });
 
         // Cursor hover effects
-        document.querySelectorAll('a, button, .project-card, .build-card, .service-card, .skill-group, .filter-tab, input, textarea, select').forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                document.querySelector('.cursor-outer').classList.add('hovering');
-                document.querySelector('.cursor-inner').classList.add('hovering');
+        if (!isMobile) {
+            document.querySelectorAll('a, button, .project-card, .build-card, .service-card, .skill-group, .filter-tab, input, textarea, select').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    document.querySelector('.cursor-outer').classList.add('hovering');
+                    document.querySelector('.cursor-inner').classList.add('hovering');
+                });
+                el.addEventListener('mouseleave', () => {
+                    document.querySelector('.cursor-outer').classList.remove('hovering');
+                    document.querySelector('.cursor-inner').classList.remove('hovering');
+                });
             });
-            el.addEventListener('mouseleave', () => {
-                document.querySelector('.cursor-outer').classList.remove('hovering');
-                document.querySelector('.cursor-inner').classList.remove('hovering');
-            });
-        });
+        }
 
         // Magnetic effect on cards
-        document.querySelectorAll('.build-card, .project-card, .service-card, .skill-group, .highlight-item').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-                card.style.transform = `translateY(-6px) perspective(600px) rotateX(${-y * 0.015}deg) rotateY(${x * 0.015}deg)`;
+        if (!isMobile) {
+            document.querySelectorAll('.build-card, .project-card, .service-card, .skill-group, .highlight-item').forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    card.style.transform = `translateY(-6px) perspective(600px) rotateX(${-y * 0.015}deg) rotateY(${x * 0.015}deg)`;
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                });
             });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = '';
-            });
-        });
+        }
 
         // Loading screen
         const loadingScreen = document.getElementById('loadingScreen');
@@ -1046,56 +1177,62 @@
         if (heroStats) statsObserver.observe(heroStats);
 
         // Cursor particle trail
-        let lastTrailTime = 0;
-        document.addEventListener('mousemove', (e) => {
-            const now = Date.now();
-            if (now - lastTrailTime < 60) return;
-            lastTrailTime = now;
-            const particle = document.createElement('div');
-            particle.className = 'cursor-trail';
-            particle.style.left = e.clientX + 'px';
-            particle.style.top = e.clientY + 'px';
-            document.body.appendChild(particle);
-            requestAnimationFrame(() => {
-                particle.style.opacity = '0';
-                particle.style.transform = `translateY(${-20 - Math.random() * 15}px) scale(0)`;
+        if (!isMobile) {
+            let lastTrailTime = 0;
+            document.addEventListener('mousemove', (e) => {
+                const now = Date.now();
+                if (now - lastTrailTime < 60) return;
+                lastTrailTime = now;
+                const particle = document.createElement('div');
+                particle.className = 'cursor-trail';
+                particle.style.left = e.clientX + 'px';
+                particle.style.top = e.clientY + 'px';
+                document.body.appendChild(particle);
+                requestAnimationFrame(() => {
+                    particle.style.opacity = '0';
+                    particle.style.transform = `translateY(${-20 - Math.random() * 15}px) scale(0)`;
+                });
+                setTimeout(() => { particle.remove(); }, 700);
             });
-            setTimeout(() => { particle.remove(); }, 700);
-        });
+        }
 
         // Scroll-linked card parallax
-        let parallaxTicking = false;
-        function updateCardParallax() {
-            const vh = window.innerHeight;
-            document.querySelectorAll('.build-card, .project-card, .highlight-item').forEach(card => {
-                const rect = card.getBoundingClientRect();
-                const centerY = rect.top + rect.height / 2;
-                const offset = (centerY - vh / 2) / vh;
-                const existingTilt = card.style.transform;
-                if (!existingTilt || existingTilt === '') {
-                    card.style.transform = `translateY(${offset * 12}px)`;
-                }
-            });
-            parallaxTicking = false;
+        if (!isMobile) {
+            let parallaxTicking = false;
+            function updateCardParallax() {
+                const vh = window.innerHeight;
+                document.querySelectorAll('.build-card, .project-card, .highlight-item').forEach(card => {
+                    const rect = card.getBoundingClientRect();
+                    const centerY = rect.top + rect.height / 2;
+                    const offset = (centerY - vh / 2) / vh;
+                    const existingTilt = card.style.transform;
+                    if (!existingTilt || existingTilt === '') {
+                        card.style.transform = `translateY(${offset * 12}px)`;
+                    }
+                });
+                parallaxTicking = false;
+            }
+            window.addEventListener('scroll', () => {
+                if (!parallaxTicking) { parallaxTicking = true; requestAnimationFrame(updateCardParallax); }
+            }, { passive: true });
         }
-        window.addEventListener('scroll', () => {
-            if (!parallaxTicking) { parallaxTicking = true; requestAnimationFrame(updateCardParallax); }
-        }, { passive: true });
 
         // Cursor magnetism on interactive elements
-        document.querySelectorAll('.btn-primary, .btn-secondary, .contact-btn, .filter-tab').forEach(el => {
-            el.addEventListener('mousemove', (e) => {
-                const rect = el.getBoundingClientRect();
-                const cx = rect.left + rect.width / 2;
-                const cy = rect.top + rect.height / 2;
-                const dx = (e.clientX - cx) * 0.25;
-                const dy = (e.clientY - cy) * 0.25;
-                el.style.transform = `translate(${dx}px, ${dy}px) scale(1.03)`;
+        if (!isMobile) {
+            document.querySelectorAll('.btn-primary, .btn-secondary, .contact-btn, .filter-tab').forEach(el => {
+                el.addEventListener('mousemove', (e) => {
+                    const rect = el.getBoundingClientRect();
+                    const cx = rect.left + rect.width / 2;
+                    const cy = rect.top + rect.height / 2;
+                    const dx = (e.clientX - cx) * 0.25;
+                    const dy = (e.clientY - cy) * 0.25;
+                    el.style.transform = `translate(${dx}px, ${dy}px) scale(1.03)`;
+                });
+                el.addEventListener('mouseleave', () => { el.style.transform = ''; });
             });
-            el.addEventListener('mouseleave', () => { el.style.transform = ''; });
-        });
+        }
 
-        animate();
+        if (!isMobile) animate();
 
         updateLoading(50);
 
