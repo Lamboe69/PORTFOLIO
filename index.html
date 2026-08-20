@@ -806,6 +806,17 @@
         <div class="footer-copy">&copy; 2026 Ojok Erick. Built with intent.</div>
     </footer>
 
+    <script>
+        // Fallback: if module script fails to load, still dismiss loading screen
+        setTimeout(function() {
+            var ls = document.getElementById('loadingScreen');
+            if (ls && !ls.classList.contains('hidden')) {
+                ls.classList.add('hidden');
+                document.body.classList.add('loaded');
+                document.querySelectorAll('section').forEach(function(s) { s.classList.add('visible'); });
+            }
+        }, 4000);
+    </script>
     <script type="importmap">
     {
         "imports": {
