@@ -858,10 +858,12 @@
             const text = element.dataset.originalText;
             if (!text) { if (callback) callback(); return; }
             const chars = element.querySelectorAll('.char');
+            const nonSpaceIndices = [];
+            for (let j = 0; j < text.length; j++) { if (text[j] !== ' ') nonSpaceIndices.push(j); }
             let completed = 0;
             chars.forEach((charEl, i) => {
-                const finalChar = text[i];
-                if (!finalChar || finalChar === ' ') { completed++; if (completed === chars.length && callback) callback(); return; }
+                const finalChar = text[nonSpaceIndices[i]] || '';
+                if (!finalChar) { completed++; if (completed === chars.length && callback) callback(); return; }
                 let cycleCount = 0;
                 const maxCycles = 5 + Math.floor(Math.random() * 4);
                 const interval = setInterval(() => {
