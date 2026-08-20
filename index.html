@@ -13,7 +13,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Outfit:wght@200;300;400;500;600;700&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
-        html, body { width: 100%; background-color: #080808; -ms-overflow-style: none; scrollbar-width: none; }
+        html, body { width: 100%; background-color: #080808; -ms-overflow-style: none; scrollbar-width: none; overflow-x: hidden; }
         body { font-family: 'Outfit', sans-serif; color: #e8e6e3; overflow-x: hidden; cursor: none; }
         * { cursor: none !important; }
         ::-webkit-scrollbar { display: none; width: 0; }
@@ -250,6 +250,7 @@
         .hero-name{perspective:800px}
         .hero-name .char{transform-origin:center bottom}
         .hero-name.revealed .char{transform:translateY(0) rotateX(0deg)}
+        @media (max-width:768px){.hero,.currently-building,.about,.projects,.skills,.services,.education,.contact{overflow:hidden}.hero-name,.section-title{perspective:none}}
 
         /* ─── Depth Canvas ─── */
         #depth-canvas{position:fixed;top:0;right:0;width:35vw;max-width:400px;height:100vh;z-index:2;pointer-events:none;opacity:0;transition:opacity 1.5s cubic-bezier(.25,1,.5,1)}
