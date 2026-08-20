@@ -888,7 +888,10 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('revealed');
-                    scrambleDecode(entry.target);
+                    // Skip scramble for heroName — it uses clean CSS flip only
+                    if (entry.target.id !== 'heroName') {
+                        scrambleDecode(entry.target);
+                    }
                     setTimeout(() => { entry.target.classList.add('shimmer'); }, 300);
                     titleObserver.unobserve(entry.target);
                 }
